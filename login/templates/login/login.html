@@ -7,9 +7,9 @@
 </head>
 <body>
     <h1>login</h1>
-    <form method="post" action="{{url_for(login.log_in)}}">
-        <input type="password" name="password" placeholder="Password">
+    <form method="post" action="{{url_for('login.log_in')}}">
         <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
         <input type="submit" value="Login">
     </form>
     
