@@ -9,15 +9,15 @@ signup = Blueprint("signup",__name__, template_folder="templates")
 @signup.route("/signup", methods= ["GET", "POST"])
 def sign_up():
     if request.method == "GET":
-        return render_template("sigup.html")
+        return render_template("signup/signup.html")
     
     elif request.method == "POST":
-        Username = request.form.get("username")
+        username = request.form.get("username")
         password = request.form.get("password")
 
         hash_password = bcrypt.generate_password_hash(password).decode("utf-8")
 
-        user = User(Username=Username, password=hash_password)
+        user = User(username=username, password=hash_password)
         db.session.add(user)
         db.session.commit()
         return redirect(url_for("dashboard.dash"))
