@@ -10,18 +10,28 @@ login_manager = LoginManager()
 
 def create_app():
     app = Flask(__name__, template_folder="templates")
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///app.db"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///.app.db"
     app.secret_key = "some_key"
 
     db.init_app(app)
 
+    from blueprint_2.home.routes import home
+    from blueprint_2.signup.routes import signup
+    from blueprint_2.login.routes import login
+    from blueprint_2.dashboard.routes import dashboard
+
+    app.register_blueprint(home)
+    app.register_blueprint(signup)
+    app.register_blueprint(login)
+    app.register_blueprint(dashboard)
+
     
     login_manager.init_app(app)
 
-    from blueprint_2.signup.models import user
+    from blueprint_2.signup.models import User
     @login_manager.user_loader
     def load_user(uid):
-        return user.query.get(uid)
+        return User.query.get(uid)
         
 
     
