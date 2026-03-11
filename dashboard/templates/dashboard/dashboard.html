@@ -6,9 +6,25 @@
     <title>Dshboard</title>
 </head>
 <body>
-    <h1>Dashboard</h1>
-    <p>this is the Dashboard</p>
+    <div class="nav">
+        <h1>dashboard</h1>
+    </div>
+
+    <form method="post" action="{{url_for('dashboard.dash')}}">
+        <input type="text" name="title" placeholder="Title">
+        <textarea name="content" placeholder="Take a note..." rows="10" cols="40"></textarea>
+        <button type="submit">Save Note</button>
+    </form>
+
+    {%for notes in note%}
+    <ol>
+        <li>{{notes.title}}</li>
+        <li>{{notes.content}}</li>
+    </ol>
+    {%endfor%}
+    
     <a href="{{url_for('home.home_page')}}">Home</a>
+    <a href="{{url_for('logout.logout_page')}}">Logout</a>
     
 </body>
 </html>
