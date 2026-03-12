@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="static/css/home.css">
 </head>
-<body>
-    <h1>signup and login</h1>
-    <a href="{{url_for('signup.sign_up')}}">Signup</a>
-    <a href="{{url_for('login.log_in')}}">Login</a>
+<body style="background-color: #faf9f6;">
+    <div class="nav">
+        <div style="height: 60px; width: 300px;display: flex; 
+        align-items: center;
+        justify-content: center;">
+            <img class="img" src="static/css/note_3.png">
+        </div>
+
+        <div style="display: flex;
+        width: 500px; justify-content: space-between;">
+            <p style="font-family: arial;">Home</p>
+            <p style="font-family: arial;">About</p>
+            <p style="font-family: arial;">Blog</p>
+            <p style="font-family: arial;">Contact</p>
+
+        </div>
+
+        <div style="height: 60px;display: flex;align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        ">
+            <a href="{{url_for('signup.sign_up')}}"><button class="button">Signup</button></a>
+            <a style="margin-right: 30px;" href="{{url_for('login.log_in')}}"><button class="button2">Login</button></a>
+        </div>
+    </div>
 </body>
 </html>
