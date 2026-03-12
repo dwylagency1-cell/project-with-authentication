@@ -10,16 +10,17 @@
         <h1>dashboard</h1>
     </div>
 
-    <form method="post" action="{{url_for('dashboard.dash')}}">
+    <form method="post" action="{{url_for('dashboard.show_page')}}">
         <input type="text" name="title" placeholder="Title">
         <textarea name="content" placeholder="Take a note..." rows="10" cols="40"></textarea>
         <button type="submit">Save Note</button>
     </form>
 
-    {%for notes in note%}
+    {%for note in notes%}
     <ol>
-        <li>{{notes.title}}</li>
-        <li>{{notes.content}}</li>
+        <h1>{{note.title}}</h1>
+        <p>{{note.content}}</p>
+        <a href="{{url_for('dashboard.delete', pid = note.pid)}}">Delete</a>
     </ol>
     {%endfor%}
     
