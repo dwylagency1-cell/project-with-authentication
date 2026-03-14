@@ -6,8 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="static/css/home.css">
 </head>
-<body style="background-color: #faf9f6;
-padding-bottom: 10000px;">
+<body style="background-color: #faf9f6;">
     <div class="nav">
         <div style="height: 60px; width: 300px;display: flex; 
         align-items: center;
@@ -84,7 +83,8 @@ padding-bottom: 10000px;">
         font-size: 46px;
         font-family: arial;">Make the most of your ideas— and <span style="margin-left: 300px;">your time</span></h1>
         <P style="
-        font-size: 20px;">Capture all essentials and access them anywhere, anytime.</P>
+        font-size: 20px;
+        font-family: arial;">Capture all essentials and access them anywhere, anytime.</P>
 
         </div>
     </div>
@@ -116,7 +116,7 @@ padding-bottom: 10000px;">
                     height: 70px;">
                     <h1 style="font-family: arial;
                     color: rgb(46, 46, 46);
-                    font-size: 30px;">Notebook & spaces</h1>
+                    font-size: 30px;">Template</h1>
 
                     </div>
                     <div style="
@@ -125,7 +125,7 @@ padding-bottom: 10000px;">
                     font-size: 18px;
                     width: 250px;
                     position: relative;
-                    bottom: 20px;">organize ideas where they belong</p>
+                    bottom: 20px;">Get further faster with ready made note structures</p>
 
                     </div>
                     
@@ -202,7 +202,7 @@ padding-bottom: 10000px;">
                     height: 70px;">
                     <h1 style="font-family: arial;
                     color: rgb(46, 46, 46);
-                    font-size: 30px;">Notebook & spaces</h1>
+                    font-size: 30px;">Search</h1>
 
                     </div>
                     <div style="
@@ -211,15 +211,141 @@ padding-bottom: 10000px;">
                     font-size: 18px;
                     width: 250px;
                     position: relative;
-                    bottom: 20px;">organize ideas where they belong</p>
+                    bottom: 20px;">Find exactly what you are looking for in seconds</p>
 
                     </div>
                     
                 </div>
             </div>
         </div>
-        
-        
     </div>
+
+    <div class="order">
+        <div class="order_child">
+            <div style="
+            height: 500px;
+            width: 500px;">
+            <img width="550px" src="static/css/side.png">
+
+            </div>
+            <div style="
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 1fr;">
+                <div style="height: 250px;" >
+                    <h1 style="font-family: arial;
+                    font-size: 56px;
+                    position: relative;
+                    top: 60px;">Bring order to everything you do</h1>
+                </div>
+                <div style="height: 150px;">
+                    <p style="font-family: arial;
+                    font-family: arial;
+                    font-size: 20px;
+                    width: 400px;
+                    color: rgb(47, 47, 47);">With NoteApp's simple and flexible structure, it's easier than ever to keep your content organized—plus integrated tasks help you stay on top of all your to-dos.</p>
+                </div>
+                <div style="height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+                    <a href="{{url_for('signup.sign_up')}}"><button class="free">Try it for free</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="unlock">
+        <div class="unlock_child">
+            <div style="
+            
+            height: 500px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;">
+
+                <img width="550px" src="static/css/goooooo.png">
+
+            </div>
+            <div style="
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 1fr;">
+                <div style="height: 250px;" >
+                    <h1 style="font-family: arial;
+                    font-size: 56px;
+                    position: relative;
+                    top: 60px;">Unlock seamless collaboration</h1>
+                </div>
+                <div style="height: 150px;">
+                    <p style="font-family: arial;
+                    font-family: arial;
+                    font-size: 20px;
+                    width: 400px;
+                    color: rgb(47, 47, 47);">Boost teamwork with real-time editing, leave comments to stay in sync, and assign tasks to keep everything moving</p>
+                </div>
+                <div style="height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+                    <a href="{{url_for('signup.sign_up')}}"><button class="free">Try it for free</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="save">
+        <div class="unlock_child">
+            <div style="
+            
+            height: 500px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            position: relative;
+            right: 70px;
+            top: 10px;">
+
+                <img width="400px" src="static/css/phone.png">
+
+            </div>
+            <div style="
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 1fr;">
+                <div style="height: 250px;" >
+                    <h1 style="font-family: arial;
+                    font-size: 56px;
+                    position: relative;
+                    top: 60px;">Save anything, in any form</h1>
+                </div>
+                <div style="height: 150px;">
+                    <p style="font-family: arial;
+                    font-family: arial;
+                    font-size: 20px;
+                    width: 400px;
+                    color: rgb(47, 47, 47);">Record, transcribe, scan, clip— no matter how you gather information, NoteApp keeps all your content safe for you.</p>
+                </div>
+                <div style="height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+                    <a href="{{url_for('signup.sign_up')}}"><button class="free">Save your ideas now</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div></div>
 </body>
 </html>
