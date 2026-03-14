@@ -188,5 +188,7 @@
     background-color: lightpink;
     width: 1200px;
     height: 700px;
-    
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 250px 250px 250px 390px;
 }
