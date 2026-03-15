@@ -1,0 +1,55 @@
+.papa{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    position: relative;
+    top: 60px;
+}
+.child{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.child_2{
+    width: 700px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: thin;
+}
+.accept{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 185px;
+    padding-left: 185px;
+    border-radius: 10px;
+    background-color: #ffcd35;
+    color: white;
+    border-width: thin;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.20s;
+}
+.accept:hover{
+    background-color: #faf9f6;
+    color: black;
+}
