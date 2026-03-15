@@ -175,7 +175,7 @@
 
 }
 .foot{
-    background-color: lightblue;
+    background-color: #fdf4db;
     width: 1370px;
     height: 800px;
     position: relative;
@@ -185,10 +185,20 @@
     justify-content: center;
 }
 .foot_child{
-    background-color: lightpink;
     width: 1200px;
     height: 700px;
     display: grid;
     column-gap: 20px;
     grid-template-columns: 250px 250px 250px 390px;
+}
+.para{
+    color: rgb(38, 38, 38);
+    font-family: arial;
+    font-size: 17px;
+
+}
+.bold{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 18px;
 }
